@@ -1,16 +1,22 @@
 {
+  "homepage": "https://elvislira.github.io/projeto_otica",
   "name": "projeto_otica",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.3"
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
